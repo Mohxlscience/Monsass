@@ -251,6 +251,9 @@ padding: 50px O 75px;
  background: black;
  border: none;   
 }
+.mnm {
+    background: white;
+}
 .container-boxs {
     width: 100%;
     @extend %flex-double-centre;
@@ -326,3 +329,167 @@ padding: 50px O 75px;
     }
     }
   }
+// FAQ
+.container-faq {
+    width: 70%;
+    max-width: 900px;
+    min-width: 300px;
+    height: auto;
+    margin: 10px auto 150px  ;
+    @extend %flex-double-centre;
+    flex-direction: column;
+}
+.questions {
+    width: 100%;
+    height: auto;
+    margin: 5px;
+
+}
+.panneau-visible {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f1f1f1;
+    border-radius: 10px;
+    position: relative;
+    z-index: 100;
+}
+.titre-questions {
+    margin-left: 10px;
+    padding: 15px 5px;
+    font-size: 25px;
+}
+.panneau-visible img {
+    margin-right: 10px;
+    width: 25px;
+    cursor: pointer;
+}
+.toggle-pannel {
+    padding: 0 15px;
+    height: 0px;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+.toggle-pannel h4 {
+    font-size: 18px ;
+    line-height: 1.5;
+}
+@media screen and (max-width : 750px ) {
+    .container-faq {
+        width: 90%;
+
+    }
+    .titre-questions {
+        margin-left: auto 10px;
+        font-size: 18px;
+    }
+}
+// <!-- Appel à l'action --> 
+.container-cta {
+    padding-bottom: 400px;
+    padding: 150px 0 100px;
+    color: #f1f1f1;
+    clip-path: polygon(0 17%, 100% 0%, 100% 82%, 0 100%);
+    background-image: linear-gradient(
+      45deg,
+      rgba(255, 0, 0, 0.53) 0%,
+      rgba(255, 0, 0, 0.53) 14.286%,
+      rgba(148, 0, 211, 0.53) 14.286%,
+      rgba(148, 0, 211, 0.53) 28.572%,
+      rgba(128, 0, 128, 0.53) 28.572%,
+      rgba(128, 0, 128, 0.53) 42.858%,
+      rgba(75, 0, 130, 0.53) 42.858%,
+      rgba(75, 0, 130, 0.53) 57.144%,
+      rgba(138, 43, 226, 0.53) 57.144%,
+      rgba(138, 43, 226, 0.53) 71.43%,
+      rgba(148, 0, 211, 0.53) 71.43%,
+      rgba(148, 0, 211, 0.53) 85.716%,
+      rgba(255, 0, 0, 0.53) 85.716%,
+      rgba(255, 0, 0, 0.53) 100.002%
+    ),
+    linear-gradient(
+      135deg,
+      rgb(255, 0, 0) 0%,
+      rgb(255, 0, 0) 12.5%,
+      rgb(148, 0, 211) 12.5%,
+      rgb(148, 0, 211) 25%,
+      rgb(128, 0, 128) 25%,
+      rgb(128, 0, 128) 37.5%,
+      rgb(75, 0, 130) 37.5%,
+      rgb(75, 0, 130) 50%,
+      rgb(138, 43, 226) 50%,
+      rgb(138, 43, 226) 62.5%,
+      rgb(148, 0, 211) 62.5%,
+      rgb(148, 0, 211) 75%,
+      rgb(255, 0, 0) 75%,
+      rgb(255, 0, 0) 87.5%,
+      rgb(148, 0, 211) 87.5%,
+      rgb(148, 0, 211) 100%
+    );
+
+}
+.txt-cta {
+    text-align: center;
+    font-size: 22px;
+    padding: 0 10px;
+}
+.btn-appel {
+    display: block;
+    color: #f1f1f1;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+    margin: 30px auto;
+    width: 250px;
+    padding: 20px;
+    border-radius: 9999px;
+    background: red;
+}
+@media screen and (max-width: 750px) {
+    .txt-cta {
+        font-size: 18px;
+
+    }
+    .btn-appel {
+        width: 200px; 
+    }
+    
+} 
+
+// footer 
+footer {
+    // position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 300px;
+    border-top: 1px dashed black;
+    background: #f1f1f1;
+    color: #333;
+    @extend %flex-double-centre;
+    flex-direction: column;
+
+}
+.bloc {
+    width: 300px;
+    margin: 0 30px;
+    font-size: 40px;
+    padding-bottom: 20px;
+
+}
+footer h3 {
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+footer p {
+    font-size: 22px;
+    line-height: 1.4;
+
+}
+.liste-media {
+@extend %flex-double-centre;
+}
+.liste-media img {
+    width: 40px;
+    margin: 10px 10px;
+}
